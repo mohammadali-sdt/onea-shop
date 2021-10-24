@@ -1,0 +1,133 @@
+// HELPER CLASSES
+
+// headings
+%heading {
+  font-family: $font-title;
+  font-weight: 600;
+}
+.heading-1 {
+  @extend %heading;
+  font-size: 2rem;
+  color: $color-black;
+}
+.heading-2 {
+  @extend %heading;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  // letter-spacing: 0.6rem;
+  color: $color-white;
+  &--dark {
+    color: $color-black;
+  }
+}
+.heading-3 {
+  @extend %heading;
+  font-size: 1.4rem;
+  color: $color-black;
+  &--white {
+    color: $color-white;
+  }
+}
+
+// margins => sm = small, md = medium, l = large, xl = huge
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-md {
+  margin-bottom: 1.4rem;
+}
+.mb-l {
+  margin-bottom: 1.8rem;
+}
+.mb-xl {
+  margin-bottom: 2rem;
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+.mt-md {
+  margin-top: 1.4rem;
+}
+.mt-l {
+  margin-top: 1.8rem;
+}
+.mt-xl {
+  margin-top: 2rem;
+}
+
+.ml-sm {
+  margin-left: 1rem;
+}
+.ml-md {
+  margin-left: 1.4rem;
+}
+.ml-l {
+  margin-left: 1.8rem;
+}
+.ml-xl {
+  margin-left: 2rem;
+}
+
+.mr-sm {
+  margin-right: 1rem;
+}
+.mr-md {
+  margin-right: 1.4rem;
+}
+.mr-l {
+  margin-right: 1.8rem;
+}
+.mr-xl {
+  margin-right: 2rem;
+}
+
+// BUTTON
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: block;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $color-black;
+  font-family: $font-display;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 0.1rem;
+  text-decoration: none;
+  border-bottom: 1px solid $color-black;
+}
+.btn--white,
+.btn--white:link,
+.btn--white:visited {
+  color: $color-white;
+  border-bottom-color: $color-white;
+}
+
+// width
+.w-10 {
+  width: 10%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-fix-10 {
+  width: 10rem;
+}

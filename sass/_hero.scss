@@ -1,0 +1,59 @@
+.hero {
+  &__img {
+    // background-color: #82b119;
+    background-image: url("../imgs/sofa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
+    grid-column: full-start / col-end 6;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start / full-end;
+      grid-row: 2 / 3;
+    }
+  }
+  &__content {
+    // background-color: #80650e;
+    grid-column: col-start 7 / full-end;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start / full-end;
+      grid-row: 2 / 3;
+    }
+  }
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.7rem;
+      text-shadow: 0.5rem 0.5rem 0.5rem rgba($color: #000000, $alpha: 0.1);
+    }
+  }
+  &__title {
+    transform: translateX(-20%);
+    // margin-left: -20%;
+    span {
+      font-size: 1rem;
+      font-weight: 200;
+      display: block;
+      letter-spacing: 0.5rem;
+      padding: 1rem 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      transform: none;
+    }
+  }
+  &__btn {
+    align-self: flex-start;
+  }
+}

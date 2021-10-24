@@ -1,0 +1,35 @@
+.sofas {
+  // background-color: #f08e6d;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  // grid-auto-flow: row dense;
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 80%;
+    }
+  }
+  &__content {
+    background-image: url("../imgs/stand.jpg");
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    // padding-bottom: 12vh;
+    gap: 1rem;
+  }
+  &__title {
+    width: 20rem;
+  }
+}

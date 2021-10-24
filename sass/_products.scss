@@ -1,0 +1,17 @@
+.products {
+  // background-color: #da4246;
+  grid-column: full-start / full-end;
+  // display: grid;
+  display: flex;
+  // align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  // justify-items: center;
+  // grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  // grid-template-rows: min-content;
+  // gap: 3rem;
+  @media only screen and (max-width: $bp-x-small) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

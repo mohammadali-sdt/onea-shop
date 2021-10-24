@@ -1,0 +1,59 @@
+// COLOR VARIABLES
+$color-primary: #232322;
+$color-secondary: #f6f6f8;
+$color-grey-light: #f7f8fa;
+$color-grey-light-2: #4d4d4d;
+$color-white: #fff;
+$color-black: #000;
+
+// FONT VARIABLES
+$font-display: "Montserrat", sans-serif;
+$font-title: "Poppins", sans-serif;
+
+// MEDIA QUERY BREAKPOINTS
+$bp-x-large: 1em; // > 1200
+$bp-large: 1em; // 1200
+$bp-medium: 50em; // 800
+$bp-small: 37.5em; // 600
+$bp-x-small: 25em; //  400
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-x-small) {
+    font-size: 45%;
+  }
+}
+body {
+  font-family: $font-display;
+  line-height: 1.3;
+  font-weight: 400;
+  color: $color-grey-light-2;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 93vh repeat(2, 43vw) repeat(2, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start]repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  // row-gap: 3rem;
+}
+
+// GENERAL STYLES
+img {
+  width: 100%;
+}
