@@ -20,8 +20,11 @@
   @media only screen and (max-width: $bp-medium) {
     padding: 1rem;
     padding-bottom: 0;
-    &__burger:checked + &__nav {
+    &__burger:not(:checked) + &__nav {
       display: none;
+    }
+    &__burger:checked + &__nav {
+      display: block;
     }
   }
 
